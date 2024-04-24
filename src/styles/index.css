@@ -1,0 +1,69 @@
+body {
+
+    background-image: url('/src/assets/image/back.png'); /* Substitua o caminho pela localização da sua imagem */
+    background-size: cover; /* Faz com que a imagem de fundo cubra todo o corpo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Define a altura do body para ocupar toda a altura da viewport */
+    margin: 0; /* Remove margens padrão do body */
+}
+    
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container button {
+    background: #9b8888;
+    border-radius: 10px;
+    margin-top: 50px; /* Adiciona um espaço entre o botão e os outros elementos */
+    font-size: 30px;
+    padding: 27px 60px;
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+.container button:hover {
+    background-color: #65e49e; /* Altere para a cor desejada */
+    color: #ffffff; /* Altere para a cor do texto desejada */
+    cursor: pointer;
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+    
+}
+
+.container h3,
+.container h1 {
+    margin-bottom: 15px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+}
+
+h3{
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 100px; /* largura desejada */
+    height: 100px; /* altura desejada */
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+    
+}

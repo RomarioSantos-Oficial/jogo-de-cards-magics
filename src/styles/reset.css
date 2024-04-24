@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Press Start 2p", cursive;
+}

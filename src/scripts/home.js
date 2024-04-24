@@ -14,4 +14,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
     configs.addEventListener('click', function() {
         window.location.href = './configs.html'; // Substitua 'pagina3.html' pela URL da sua terceira página
     });
-});
+}); 

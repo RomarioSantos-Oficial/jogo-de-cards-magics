@@ -1,6 +1,6 @@
 body {
 
-    background-image: url('./src/assets/image/back.png'); /* Substitua o caminho pela localização da sua imagem */
+    background-image: url('../assets/image/back.png'); /* Substitua o caminho pela localização da sua imagem */
     background-size: cover; /* Faz com que a imagem de fundo cubra todo o corpo */
     background-position: center; /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */

@@ -18,8 +18,8 @@ margin: 0; /* Remove margens padrão do body */
     background: #9b8888;
     border-radius: 10px;
     margin-top: 50px; /* Adiciona um espaço entre o botão e os outros elementos */
-    font-size: 30px;
-    padding: 27px 60px;
+    font-size: 50px;
+    padding: 37px 80px;
     transition: transform 0.3s; /* Adiciona uma transição suave */
 }
 

@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Espaço na margem superior */
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: column; /* Alterado para exibir as divs uma abaixo da outra */
+    align-items: center;
+    width: 100%; /* Para garantir que as divs de cartões ocupem toda a largura disponível */
+}
+
+.cardsContainer {
+    align-items: center;
+    flex-grow: 1; /* Para que as divs de cartões ocupem o espaço disponível */
+}
+
+.subCards {
+    margin-bottom: 20px; /* Espaço entre as linhas de cartões */
+}
+
+.subCards > .card {
+    display: inline-block; /* Para exibir as cartas uma ao lado da outra */
+}
+
+.card {
+    width: 100px;
+    height: 160px;
+    border: 1px solid black;
+    margin: 0 5px; /* Espaço entre os cartões */
+}
+
+.leftCards .card,
+.rightCards .card {
+    border-color: red; /* Cor da borda vermelha */
+}
+
+/* Adiciona estilo para as divs bottomCards e topCards */
+#bottomCards,
+#topCards {
+    display: flex;
+    justify-content: center; /* Centraliza as cartas horizontalmente */
+    flex-wrap: wrap; /* Permite que as cartas sejam distribuídas em várias linhas */
+}
+
+#bottomCards .card,
+#topCards .card {
+    margin: 5px; /* Espaço entre as cartas */
+}
+
+
+#leftCards {
+    display: flex;
+    flex-direction: column-reverse; /* Inverte a ordem de exibição das divs */
+}
+
+.subCards {
+    margin-bottom: 20px; /* Espaço entre as divs */
+}

@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Start</title>
+
+    <link rel="shortcut icon" href="../assets/icons/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/engine.css">
+
 </head>
 <body>
     
+    <div class="container">
+        <div class="cards" id="topCards"></div>
+        <div class="gameContainer">
+            <div class="cardsContainer" id="leftCards">
+                <div class="subCards" id="leftThird"></div>
+                <div class="subCards" id="leftSecond"></div>
+                <div class="subCards" id="leftFirst"></div>
+            </div>
+            
+            <div class="cardsContainer" id="rightCards">
+                <div class="subCards" id="rightFirst"></div>
+                <div class="subCards" id="rightSecond"></div>
+                <div class="subCards" id="rightThird"></div>
+            </div>
+        </div>
+        <div class="cards" id="bottomCards"></div>
+    </div>
+    
+
+ <script src="../scripts/engine.js"></script>
+
 </body>
 </html>

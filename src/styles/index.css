@@ -19,19 +19,30 @@ body {
     height: 100vh;
 }
 
+.login-form{
+     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 15px;
+    
+}
+
 .container button {
-    background: #9b8888;
+    background: #65e49e;
     border-radius: 10px;
+    color: rgb(5, 5, 5);
     margin-top: 50px; /* Adiciona um espaço entre o botão e os outros elementos */
     font-size: 30px;
     padding: 27px 60px;
     transition: transform 0.3s; /* Adiciona uma transição suave */
+    cursor: pointer;
 }
 
-.container button:hover {
-    background-color: #65e49e; /* Altere para a cor desejada */
-    color: #ffffff; /* Altere para a cor do texto desejada */
-    cursor: pointer;
+.container button:disabled {
+    background-color: #5d5f5e; /* Altere para a cor desejada */
+    color: #000000; /* Altere para a cor do texto desejada */
+    cursor: auto;
     transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
     
 }
@@ -66,4 +77,15 @@ h3{
     cursor: pointer;
     transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
     
+}
+
+.name{
+    border: 2px solid #280bcf;
+    color: #ff0ad6;
+    border-radius: 8px;
+    font-size: 2.2em;
+    max-width: 300px;
+    outline: auto;
+    padding: 20px;
+    width: 100%;
 }

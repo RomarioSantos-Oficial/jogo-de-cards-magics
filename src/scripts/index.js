@@ -1,10 +1,22 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-    var musica = document.getElementById('musica');
-    musica.volume = 0.0; // Define o volume para 10% (0.0 a 1.0)
-    musica.play();
 
-    var botao = document.getElementById('meuBotao');
-    botao.addEventListener('click', function() {
-        window.location.href = './src/pages/home.html'; // Substitua 'outra_pagina.html' pelo nome da sua página de destino
-    });
-});
+const input = document.querySelector('.name');
+const button = document.querySelector('#meuBotao');
+const  form = document.querySelector('.login-form')
+
+const validateInput = ({target})=> {
+    if(target.value.length > 2){
+        button.removeAttribute('disabled');
+        return;
+    }
+    button.setAttribute('disabled', '');
+}
+
+const handleSubmit =(event) => {
+    event.preventDefault();
+
+    localStorage.setItem('player', input.value);
+    window.location = '/src/pages/home.html'
+} 
+
+input.addEventListener('input', validateInput);
+form.addEventListener('submit', handleSubmit);

@@ -7,33 +7,45 @@
 
     <link rel="shortcut icon" href="../assets/icons/icon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/engine.css">
+    <link rel="stylesheet" href="../styles/reset.css">
 
 </head>
 <body>
-    
+
     <div class="container">
-        <div class="cards" id="topCards">
-            <img  src="../assets/cards/costa-card.png" alt="Consta da carta">
+
+        <div class="card_enemy">
+            <div class="card"><div class="face back"></div></div>
+            <div class="card"><div class="face back"></div></div>
+            <div class="card"><div class="face back"></div></div>
+            <div class="card"><div class="face back"></div></div>
+            <div class="card"><div class="face back"></div></div>
         </div>
-        <div class="gameContainer">
-            <div class="cardsContainer" id="leftCards">
-                <div class="subCards" id="leftThird"></div>
-                <div class="subCards" id="leftSecond"></div>
-                <div class="subCards" id="leftFirst"></div>
-            </div>
-            
-            <div class="cardsContainer" id="rightCards">
-                <div class="subCards" id="rightFirst"></div>
-                <div class="subCards" id="rightSecond"></div>
-                <div class="subCards" id="rightThird"></div>
-            </div>
+    
+        <div class="battle_field">
+            <div class="card_empty"><div class="front field"></div></div>
+            <div class="card_empty"><div class="front field"></div></div>
+            <div class="card_empty"><div class="front field"></div></div>
+            <div class="card_empty"><div class="front field"></div></div>
+            <div class="card_empty"><div class="front field"></div></div>
+            <div class="card_empty"><div class="front field"></div></div>
+            <div class="card_empty"><div class="front field"></div></div>
+            <div class="card_empty"><div class="front field"></div></div>
+            <div class="card_empty"><div class="front field"></div></div>
+            <div class="card_empty"><div class="front field"></div></div>
         </div>
-        <div class="cards" id="bottomCards"></div>
+    
+        <div class="card_player">
+            <div class="card"><div class="player face"></div></div>
+            <div class="card"><div class="player face"></div></div>
+            <div class="card"><div class="player face"></div></div>
+            <div class="card"><div class="player face"></div></div>
+            <div class="card"><div class="player face"></div></div>
+        </div>
+    
     </div>
     
-
  <script src="../scripts/engine.js"></script>
 
 </body>

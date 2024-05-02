@@ -1,66 +1,90 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px; /* Espaço na margem superior */
+.container{
+    margin-top: 12px;
 }
 
-.gameContainer {
-    display: flex;
-    flex-direction: column; /* Alterado para exibir as divs uma abaixo da outra */
-    align-items: center;
-    width: 100%; /* Para garantir que as divs de cartões ocupem toda a largura disponível */
-}
-
-.cardsContainer {
-    align-items: center;
-    flex-grow: 1; /* Para que as divs de cartões ocupem o espaço disponível */
-}
-
-.subCards {
-    margin-bottom: 20px; /* Espaço entre as linhas de cartões */
-}
-
-.subCards > .card {
-    display: inline-block; /* Para exibir as cartas uma ao lado da outra */
-}
 
 .card {
-    width: 100px;
-    height: 160px;
-    border: 1px solid black;
-    margin: 0 5px; /* Espaço entre os cartões */
+    aspect-ratio: 9/14;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Adiciona margem inferior entre os cartões */
+    background-color: blue;
 }
 
-.leftCards .card,
-.rightCards .card {
-    border-color: red; /* Cor da borda vermelha */
+.card_enemy{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+  }
+
+
+.card_player {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
 }
 
-/* Adiciona estilo para as divs bottomCards e topCards */
-#bottomCards,
-#topCards {
-    display: flex;
-    justify-content: center; /* Centraliza as cartas horizontalmente */
-    flex-wrap: wrap; /* Permite que as cartas sejam distribuídas em várias linhas */
+.card_empty{
+    border-radius: 5px;
+    aspect-ratio: 1.4/2;
+    width: 100%;
+    background-color: rgb(151, 151, 230);
+    margin-bottom: 15px; /* Adiciona margem inferior entre os cartões */;
+    margin-top: 10px;
 }
 
-#bottomCards .card,
-#topCards .card {
-    margin: 5px; /* Espaço entre as cartas */
+.card_player{
+    margin-top: 10px;
+}
+
+.battle_field{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
 }
 
 
-#leftCards {
-    display: flex;
-    flex-direction: column-reverse; /* Inverte a ordem de exibição das divs */
+.face {
+width: 100%;
+height: 100%;
 }
 
-.subCards {
-    margin-bottom: 20px; /* Espaço entre as divs */
+.player {
+    background-image: url('../assets/cards/darkness/1.png'); /* Substitua pelo caminho correto para sua imagem */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s; 
 }
 
-#topCards img {
-    width: 100px;
-    height: 160px;
+.player:hover {
+    transform: scale(1.5); /* Aumenta o tamanho em 5% */
+}
+
+
+.back{
+    background-image: url('../assets/cards/costa-card.png');
+    background-size: cover;
+    background-position: center;
+   }
+
+.front {
+    width: 100%;
+    height: 100%;
+}
+
+.field{
+    transition: transform 0.3s; 
+}
+
+.field:hover {
+    transform: scale(1.5); /* Aumenta o tamanho em 5% */
 }

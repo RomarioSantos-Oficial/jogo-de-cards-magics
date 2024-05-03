@@ -1,9 +1,12 @@
-body
-{display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh; /* Define a altura do body para ocupar toda a altura da viewport */
-margin: 0; /* Remove margens padrão do body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Jaro", sans-serif; /* Correção do nome da fonte */
+    font-weight: 400;
+    font-style: normal;
 }
 
 #video-background {

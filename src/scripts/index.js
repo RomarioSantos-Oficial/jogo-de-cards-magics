@@ -1,7 +1,7 @@
-
 const input = document.querySelector('.name');
 const button = document.querySelector('#meuBotao');
-const  form = document.querySelector('.login-form')
+const  form = document.querySelector('.login-form');
+
 
 const validateInput = ({target})=> {
     if(target.value.length > 2){
@@ -20,3 +20,13 @@ const handleSubmit =(event) => {
 
 input.addEventListener('input', validateInput);
 form.addEventListener('submit', handleSubmit);
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+
+    var studio = document.getElementById('logo');
+
+    studio.addEventListener('click', function(){
+        window.location.href = './src/pages/studio.html';
+    });
+});

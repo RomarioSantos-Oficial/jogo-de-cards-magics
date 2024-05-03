@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     var start = document.getElementById('start');
     var crads = document.getElementById('crads');
     var configs = document.getElementById('configs');
+    var studio = document.getElementById('logo');
 
     start.addEventListener('click', function() {
         window.location.href = './engine.html'; // Substitua 'pagina1.html' pela URL da sua primeira página
@@ -14,6 +15,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
     configs.addEventListener('click', function() {
         window.location.href = './configs.html'; // Substitua 'pagina3.html' pela URL da sua terceira página
     });
+
+    studio.addEventListener('click', function(){
+        window.location.href = './studio.html';
+    });
+    
 }); 
 
 // Seleciona todos os botões

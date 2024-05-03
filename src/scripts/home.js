@@ -15,3 +15,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
         window.location.href = './configs.html'; // Substitua 'pagina3.html' pela URL da sua terceira página
     });
 }); 
+
+// Seleciona todos os botões
+const buttons = document.querySelectorAll('.button');
+
+// Carrega o efeito sonoro
+const hoverSound = document.getElementById('hoverSound');
+
+// Adiciona um evento de mouseover a cada botão
+buttons.forEach(button => {
+    button.addEventListener('mouseover', () => {
+        // Reproduz o efeito sonoro quando o mouse passa por cima do botão
+        hoverSound.play();
+    });
+});
+

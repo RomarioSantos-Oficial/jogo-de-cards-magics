@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-
+    <title>Menu Inicial</title>
+    
+    <!-- icons -->
     <link rel="shortcut icon" href="../assets/icons/icon.png" type="image/x-icon">
 
+    <!-- styles -->
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/home.css">
+
+    <!-- Audio -->
+    <audio id="musica" src="../assets/music/menu inical.mp3" autoplay loop></audio>
+
 </head>
 <body>
+
+    <video autoplay loop muted id="video-background">
+        <source src="../assets/videos/fundo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
     <div class="container">
         <div><button class="button" id="start" type="button">Começa o jogo</button></div>
@@ -19,10 +30,13 @@
         <div><button class="button" id="sair" type="button">Sair</button></div>
     </div>
 
+        <!-- efeito sonoro  -->
+    <audio id="hoverSound" src="../assets/sounds/menuEfecter.mp3"></audio>
 
     <img class="logo" src="../assets/image/logo.png" alt="logo da empresa">
 
     <script src="../scripts/home.js"></script>
+    <script src="../scripts/music.js"></script>
     
 </body>
 </html>

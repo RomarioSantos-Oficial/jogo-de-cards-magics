@@ -6,12 +6,29 @@ height: 100vh; /* Define a altura do body para ocupar toda a altura da viewport 
 margin: 0; /* Remove margens padrão do body */
 }
 
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -1000;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    z-index: 1;
+    position: relative;
+    padding: 20px;
+    color: white;
 }
 
 .button {

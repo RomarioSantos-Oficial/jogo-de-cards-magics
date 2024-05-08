@@ -1,0 +1,68 @@
+engine.css
+
+.enemy_Cards {
+    height: 26vh;
+    background-color: orange; /* Laranja para enemy_Cards */
+    text-align: center; /* Centralizar conteúdo horizontalmente */
+    display: flex; /* Usar flexbox para alinhar verticalmente */
+    flex-direction: column; /* Empilhar elementos verticalmente */
+    justify-content: center; /* Centralizar verticalmente */
+    align-items: flex-start; /* Alinhar à esquerda */
+}
+
+.battlefield {
+    display: flex;
+    height: 47vh;
+    background-color: red; /* Vermelho para battlefield */
+    text-align: center; /* Centralizar conteúdo horizontalmente */
+    display: flex; /* Usar flexbox para alinhar verticalmente */
+    flex-direction: column; /* Empilhar elementos verticalmente */
+    justify-content: center; /* Centralizar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+}
+
+.player_Cards {
+    height: 26vh;
+    background-color: blue; /* Azul para player_Cards */
+    text-align: center; /* Centralizar conteúdo horizontalmente */
+    display: flex; /* Usar flexbox para alinhar verticalmente */
+    flex-direction: column; /* Empilhar elementos verticalmente */
+    justify-content: center; /* Centralizar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    position: relative; /* Adicionado para usar height: 100% no child */
+}
+
+
+#timer-player
+button {
+    margin: 20px;
+    align-self: flex-start;
+}
+
+
+.cards_player, #cards_enemy {
+    width: 75px; /* 3/4 da largura da player_Cards */
+    height: 100%; /* 3/4 da altura da player_Cards */
+    background-color: green; /* Cor de fundo do card */
+}
+
+.enemy_Cards,
+.battlefield,
+.player_Cards {
+    width: 100%;
+    text-align: center; /* Centralizar conteúdo horizontalmente */
+    display: flex; /* Usar flexbox para centralizar verticalmente */
+    justify-content: center; /* Centralizar conteúdo verticalmente */
+    align-items: center;
+    margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+.timer {
+    border-radius: 50%; /* Fazer a borda arredondada */
+    background-color: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    width: 50px; /* Ajustar a largura conforme necessário */
+    height: 50px; /* Ajustar a altura conforme necessário */
+    line-height: 50px; /* Centralizar verticalmente o texto */
+    text-align: center; /* Centralizar horizontalmente o texto */
+}

@@ -1,90 +1,12 @@
-.container{
-    margin-top: 12px;
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
 }
-
-
-.card {
-    aspect-ratio: 9/14;
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 15px; /* Adiciona margem inferior entre os cartões */
-    background-color: blue;
-}
-
-.card_enemy{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 15px;
+canvas {
+    display: block;
     margin: 0 auto;
-    max-width: 800px;
-    width: 100%;
-  }
-
-
-.card_player {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 15px;
-  margin: 0 auto;
-  max-width: 800px;
-  width: 100%;
+    border: 1px solid black;
 }
 
-.card_empty{
-    border-radius: 5px;
-    aspect-ratio: 1.4/2;
-    width: 100%;
-    background-color: rgb(151, 151, 230);
-    margin-bottom: 15px; /* Adiciona margem inferior entre os cartões */;
-    margin-top: 10px;
-}
-
-.card_player{
-    margin-top: 10px;
-}
-
-.battle_field{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 15px;
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
-}
-
-
-.face {
-width: 100%;
-height: 100%;
-}
-
-.player {
-    background-image: url('../assets/cards/darkness/1.png'); /* Substitua pelo caminho correto para sua imagem */
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s; 
-}
-
-.player:hover {
-    transform: scale(1.5); /* Aumenta o tamanho em 5% */
-}
-
-
-.back{
-    background-image: url('../assets/cards/costa-card.png');
-    background-size: cover;
-    background-position: center;
-   }
-
-.front {
-    width: 100%;
-    height: 100%;
-}
-
-.field{
-    transition: transform 0.3s; 
-}
-
-.field:hover {
-    transform: scale(1.5); /* Aumenta o tamanho em 5% */
-}
